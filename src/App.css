@@ -18,16 +18,19 @@ body {
   background-color: #DADADA;
 }
 
-.main-image {
+.editor {
   grid-area: image;
-  background-image: url("https://source.unsplash.com/EwKXn5CapA4");
   width: 100%;
   height: 100%;
+  display: grid;
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
+  place-items: center;
 }
-
+.input-file {
+  margin: auto;
+}
 .sidebar {
   grid-area: sidebar;
   background-color: hsl(265, 100%, 86%);

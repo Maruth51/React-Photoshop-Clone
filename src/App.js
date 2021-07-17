@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Slider from './Slider'
 import SidebarItem from './SidebarItem'
+import Editor from './Editor'
 
 const DEFAULT_OPTIONS = [
   {
@@ -102,7 +103,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="main-image" style={getImageStyle()} />
+      <Editor getImageStyle={getImageStyle}/>
       <div className="sidebar">
         {options.map((option, index) => {
           return (
